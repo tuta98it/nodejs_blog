@@ -1,0 +1,31 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Đây là các bài tập thực thành trong khóa học nodejs F8FullStack",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TranAnhTu1998/nodejs_blog.git"
+  },
+  "keywords": [
+    "nodejs",
+    "blog",
+    "f8fullstack"
+  ],
+  "author": "trananhtu98",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TranAnhTu1998/nodejs_blog/issues"
+  },
+  "homepage": "https://github.com/TranAnhTu1998/nodejs_blog#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
