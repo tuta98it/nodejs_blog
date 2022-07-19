@@ -2,9 +2,10 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "Đây là các bài tập thực thành trong khóa học nodejs F8FullStack",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,9 +24,20 @@
   },
   "homepage": "https://github.com/TranAnhTu1998/nodejs_blog#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "all": "^0.0.0",
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express3-handlebars": "^0.5.2",
+    "jquery-file-upload-middleware": "^0.1.8",
+    "loadtest": "^5.2.0",
+    "nodemailer": "^6.7.7",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
+    "grunt": "^1.5.3",
+    "mocha": "^10.0.0",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.19"
   }
 }
