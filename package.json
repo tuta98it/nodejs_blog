@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
+    
     "beautiful": "lint-staged",
+    "prepare": "lint-staged", 
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,9 +18,7 @@
     "src/**/*.{js, json, scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   
-  "scripts": {
-    "prepare": "husky install"
-  }
+
   
   "repository": {
     "type": "git",
