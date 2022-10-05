@@ -5,9 +5,21 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
+    "beautiful": "lint-staged",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
+
+  
+  "lint-staged": {
+    "src/**/*.{js, json, scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  
+  "scripts": {
+    "prepare": "husky install"
+  }
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TranAnhTu1998/nodejs_blog.git"
@@ -36,8 +48,11 @@
   },
   "devDependencies": {
     "grunt": "^1.5.3",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "mocha": "^10.0.0",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
   }
 }
